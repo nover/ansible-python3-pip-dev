@@ -1,0 +1,15 @@
+---
+  - name: Ensure dev libs for various pip packages are installed 
+    apt: name={{item}} state=present
+    with_items:
+      - pkg-config
+      - gfortran 
+      - python-dev 
+      - libatlas-base-dev
+      - liblapack-dev 
+      - liblapacke-dev
+      - libblas-dev 
+      - liblapack-dev
+      - libpng-dev 
+      - libjpeg8-dev 
+      - libfreetype6-dev
